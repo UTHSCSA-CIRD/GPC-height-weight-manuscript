@@ -184,12 +184,27 @@ list of site and contact method see Table 2.
 IT mechanics, Patient selection & contact, I2B2
 -----------------------------------------------
 
-Placeholder text. \[Alex\]
+This study combined electronic chart review with the results of a survey administered
+to patients, or in the case of minors, to the patients' guardians. For the
+electronic chart review, data was extracted from an open source data warehouse platform
+called Integrating Informatics from Bench to Bedside (i2b2) [@murphy_instrumenting_2009]. 
+Each of the participating sites had an i2b2 instance deployed, where they stored
+a de-identified version of all structured data from their respective EMR systems. As a 
+result, no site had to transmit any identifying information to any other site. Though not all
+the sites used the same type of EMR system, because of i2b2's very flexible 
+star-schema design the task of combining data from disparate sources was made more tractable. The patient
+surveys were administered via REDCap [@reference_forthcoming]. The survey data and the EMR
+data extracted from i2b2 could be merged together because each record is keyed to the same
+non-informative index accross the two data sources.
+
+There was one supplementary request sent out for the study sites to acquire from their EMRs 
+information about race, ethnicity, and class of insurance provider (private, Medicaid, employer, government, 
+self-pay, etc.). Together with these data elements, information about income was requested. Since not all health systems record patient income, we had to rely on median household income for the census block group in which each patient's address was located, as obtained from the 2013 American Community Survey [@reference_forthcoming]. 
 
 EHRs data extract, Patient reported outcome measures/Redcap Survey Data & Data Entry
 ------------------------------------------------------------------------------------
 
-Placeholder text. \[Alex\]
+Data was extracted from the EMR using DatBuilder [@reference_forthcoming] collated into an analyzable tabular form using DataFinisher [@bokov_denormalize_2016].
 
 Analysis Plan
 -------------
