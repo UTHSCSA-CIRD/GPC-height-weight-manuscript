@@ -2,7 +2,7 @@
 subtitle: 'Author 1, Author 2, … , Corresponding Author'
 title: |
     Patient Engagement in Clinical Data Research Networks: The 2015 Greater
-    Plains Collaborative Health and Medical Research Family Survey 
+    Plains Collaborative Health and Medical Research Family Survey
 ---
 
 Target journals:
@@ -184,12 +184,40 @@ list of site and contact method see Table 2.
 IT mechanics, Patient selection & contact, I2B2
 -----------------------------------------------
 
-Placeholder text. \[Alex\]
+This study combined electronic chart review with the results of a survey
+administered to patients, or in the case of minors, to the patients’
+guardians. For the electronic chart review, data was extracted from an
+open source data warehouse platform called Integrating Informatics from
+Bench to Bedside (i2b2) \[@murphy\_instrumenting\_2009\]. Each of the
+participating sites had an i2b2 instance deployed, where they stored a
+de-identified version of all structured data from their respective EMR
+systems. As a result, no site had to transmit any identifying
+information to any other site. Though not all the sites used the same
+type of EMR system, because of i2b2’s very flexible star-schema design
+the task of combining data from disparate sources was made more
+tractable. The patient surveys were administered via REDCap
+\[@reference\_forthcoming\]. The survey data and the EMR data extracted
+from i2b2 could be merged together because each record is keyed to the
+same non-informative index accross the two data sources.
+
+Cohort selection was also done using i2b2, using the selection criteria
+shown in Table 3.
+
+There was one supplementary request sent out for the study sites to
+acquire from their EMRs information about race, ethnicity, and class of
+insurance provider (private, Medicaid, employer, government, self-pay,
+etc.). Together with these data elements, information about income was
+requested. Since not all health systems record patient income, we had to
+rely on median household income for the census block group in which each
+patient’s address was located, as obtained from the 2013 American
+Community Survey \[@reference\_forthcoming\].
 
 EHRs data extract, Patient reported outcome measures/Redcap Survey Data & Data Entry
 ------------------------------------------------------------------------------------
 
-Placeholder text. \[Alex\]
+Data was extracted from the EMR using DatBuilder
+\[@reference\_forthcoming\] collated into an analyzable tabular form
+using DataFinisher \[@bokov\_denormalize\_2016\].
 
 Analysis Plan
 -------------
@@ -227,14 +255,14 @@ https://academic.oup.com/jamia/search-results?page=1&q=PCORI&SearchSourceType=1
 
 R. L. Fleurence, L. H. Curtis, R. M. Califf, R. Platt, J. V. Selby, and
 J. S. Brown, “Launching PCORnet, a national patient-centered clinical
-research network,” *J Am Med Inform Assoc*, vol. 21, no. 4, pp. 578–582,
+research network,” *J Am Med Inform Assoc*, vol. 21, no. 4, pp. 578–582,
 Jul. 2014 \[Online\]. Available:
 https://academic.oup.com/jamia/article/21/4/578/2909226/Launching-PCORnet-a-national-patient-centered.
 \[Accessed: 12-Apr-2017\]
 
 L. R. Waitman, L. S. Aaronson, P. M. Nadkarni, D. W. Connolly, and J. R.
 Campbell, “The Greater Plains Collaborative: a PCORnet Clinical Research
-Data Network,” J Am Med Inform Assoc, vol. 21, no. 4, pp. 637–641, Jul.
+Data Network,” J Am Med Inform Assoc, vol. 21, no. 4, pp. 637–641, Jul.
 2014 \[Online\]. Available:
 https://academic.oup.com/jamia/article/21/4/637/2909307/The-Greater-Plains-Collaborative-a-PCORnet.
 \[Accessed: 12-Apr-2017\]
